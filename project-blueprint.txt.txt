@@ -1,0 +1,29 @@
+APP NAME: Analiz IELTS
+
+STACK:
+- React + Vite
+- Tailwind CSS
+- Supabase (Auth + DB)
+- DeepSeek AI
+- Browser audio APIs
+- Google Antigravity
+
+PAGES:
+- /login
+- /home
+- /plan
+- /lesson/:day
+- /mock-tests
+
+CORE FEATURES:
+- Auth (email/password)
+- 30-day plan
+- Unlock system
+- Module completion
+- AI Writing & Speaking
+- Mock tests
+
+LANGUAGE:
+- Mostly Bangla + some English
+
+MVP FIRST, polish later.

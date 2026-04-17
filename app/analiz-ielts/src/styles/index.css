@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset layout */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base font */
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ====== LIGHT DESIGN SYSTEM ====== */
+@layer components {
+  .app-bg { @apply min-h-screen bg-gray-50 text-gray-900; }
+  .app-muted { @apply text-gray-500; }
+
+  .app-card {
+    @apply bg-white border border-gray-200 rounded-2xl shadow-sm;
+  }
+
+  .app-input {
+    @apply w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-400
+    focus:outline-none focus:ring-4 focus:ring-primary/15 focus:border-primary;
+  }
+
+  .btn-primary {
+    @apply w-full rounded-xl bg-primary py-3 font-semibold text-white shadow-sm
+    hover:bg-primary-hover transition disabled:opacity-50;
+  }
+
+  .btn-link {
+    @apply text-primary hover:text-primary-hover font-semibold;
+  }
+}
