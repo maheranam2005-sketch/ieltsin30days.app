@@ -7,6 +7,9 @@ import LessonPage from './pages/LessonPage'
 import MockTestsPage from './pages/MockTestsPage'
 import MockTestPlayerPage from './pages/MockTestPlayerPage'
 import PerformancePage from './pages/PerformancePage'
+import ExercisesPage from './pages/ExercisesPage'
+import DrillPlayerPage from './pages/DrillPlayerPage'
+import VocabularyPage from './pages/VocabularyPage'
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route path="/mock-tests" element={<MockTestsPage />} />
         <Route path="/mock-tests/:testId" element={<MockTestPlayerPage />} />
         <Route path="/performance" element={<PerformancePage />} />
+        <Route path="/exercises" element={<ExercisesPage />} />
+        <Route path="/exercises/:drillId" element={<DrillPlayerPage />} />
+        <Route path="/vocabulary" element={<VocabularyPage />} />
       </Route>
 
       <Route path="/" element={<Navigate to="/home" replace />} />

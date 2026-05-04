@@ -28,7 +28,7 @@ const HomePage = () => {
           Dashboard
         </h2>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           
           {/* Plan Card */}
           <Link
@@ -69,6 +69,20 @@ const HomePage = () => {
             </h3>
             <p className="app-muted text-sm">
               See your Writing/Speaking band history.
+            </p>
+          </Link>
+
+          {/* Exercises Card */}
+          <Link
+            to="/exercises"
+            className="app-card group relative overflow-hidden p-8 transition hover:shadow-md"
+          >
+            <div className="text-2xl mb-2">🎯</div>
+            <h3 className="mb-2 text-xl font-bold text-gray-900">
+              Exercises
+            </h3>
+            <p className="app-muted text-sm">
+              Practice Reading, Listening, and Writing drills freely.
             </p>
           </Link>
 
